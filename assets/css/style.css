@@ -1,0 +1,276 @@
+body{
+      background-color: #eeeee4;
+      background-color: #f8f8f1;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Hides any horizontal overflow */
+    }
+    .background1{
+      background-image: url("../imgs/bg102.png");/*marocmaroc4-2.png*/
+      background-size: cover; /* Scales the image to cover the entire body */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      height: 105vh; /* Sets the body height to 100% of the viewport height */
+      margin: 0; /* Removes default margin */
+      width: 100%;
+      }
+      .background2{
+      background-image: url("../imgs/bg3.png");
+      background-size: cover; /* Scales the image to cover the entire body */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      height: 105vh; /* Sets the body height to 100% of the viewport height */
+      margin: 0; /* Removes default margin */
+      }
+
+
+.quotes{
+       font-family: "Josefin Sans", sans-serif;
+       font-size: 28px;
+    }
+     .spacer {
+      height: 600px; /* This creates a large space to simulate a big page */
+    }
+    .imgSellers{
+      width:100%; 
+      height: 250px;
+      object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+      display: block; /* Ensure images behave like block elements */
+      margin: 0 auto; /* Center the images if needed */
+      border-bottom-left-radius: 30px; /* Adjust radius as needed */
+      border-bottom-right-radius: 30px; /* Adjust radius as needed */
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+
+
+    }
+    .imgSkinCare{
+      width:85%; 
+      height: 180px;
+      object-fit: inherit; /* Ensures the image covers the area while maintaining aspect ratio */
+      display: block; /* Ensure images behave like block elements */
+      margin: 0 auto; /* Center the images if needed */
+      border-radius: 90%;
+      
+    }
+    .cardLegend{
+      color: black;
+
+    }
+    .cardStyle{
+      background-color: #f8f8f1;
+      border-width: 0px;
+      
+    }
+    .cardBodyStyle{
+      height: 100px;
+      background-color: #f8f8f1;
+    }
+    .cardBodyStyle p{
+      min-height: 40px;
+    }
+    
+    .btn-hover {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+    .card:hover .btn-hover {
+      opacity: 1;
+      visibility: visible;
+    }
+    .card:hover .card-body{
+      background-color: white;
+      transition: background-color 0.3s ease;
+    }
+
+
+
+
+    .card-header:hover{
+       background-color: red !important;
+    }
+      /* Par défaut : pas de soulignement */
+    .cardLegend::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 4px; /* épaisseur du trait */
+      background-color: #000; /* couleur du trait */
+      transition: width 0.3s ease;
+      margin: 6px auto 0; /* espace au-dessus du trait */
+    }
+
+    /* Quand on survole l'image, on cible le texte et affiche le trait */
+    .card-img-top:hover + .cardBodyStyle .cardLegend::after {
+      width: 100%; /* largeur du trait au survol */
+    }
+
+
+
+
+
+
+
+
+    .card:hover {
+      background-color: white !important;
+      transition: background-color 0.3s ease;
+    }
+    
+    .card-img-top:hover {
+    background-color: transparent !important;
+    }
+    .navigation{
+      background-color:white;
+      opacity: 90%;
+      height: 90px;
+      border-radius: 0px;
+      width: 100%;
+    }
+    .navigation1{
+      background-color:white;
+      opacity: 60%;
+      height: 90px;
+      border-radius: 0px;
+      width: 100%;
+
+    }
+    .navigation .navlinks {
+      font-size: 17px;
+      color: black;
+      font-family: "LXGW WenKai TC", cursive;
+      font-weight: 300;
+      font-style: normal;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #000; /* Fond noir avec transparence */
+      border-radius: 50%; /* Optionnel pour arrondir le fond */
+      padding: 20px; /* Optionnel pour ajouter un espacement autour de l'icône */
+    }
+    .card{
+      display: flex;
+    flex-direction: column;
+    height: 100%;
+    }
+    .card-body{
+      display: flex;
+      margin-bottom: 1rem;
+   
+    }
+    .card-header{
+      display: flex;
+      margin-bottom: 1rem;
+    }
+    .skincareBody  p{
+      font-size: 13px;
+      min-height: 40px;
+    }
+    .aestethic_text{
+      font-family: Gilda Display, serif;
+      font-size: 40px;
+
+      line-height: 42px;
+      text-transform: uppercase;
+    margin-bottom: 15px;
+    }
+    .nav-link.menu_text{
+      font-family: Arimo, sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .email_div{
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0px 0px 0px 16px;
+    height: 42px;
+    text-align: left;
+    color: rgb(40, 40, 42);
+    font-family: "Monument Grotesk Bold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    background-color: rgba(214, 214, 214, 0.5);
+    border: 1px solid rgba(96, 106, 114, 0);
+    }
+    .email_btn{
+      width: 400px;
+      height: 45px;
+      background-color: rgb(236, 234, 228) ;
+    }
+    .email_btn:hover{
+      background-color: rgb(40, 40, 42);
+      color: white;
+    }
+    .email_para{
+      font-family: 'Monument Grotesk Mono', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      font-style: normal;
+    }
+
+    .contact-list{
+      list-style: none; /* Removes bullets/points */
+      padding: 0; /* Removes default padding */
+      margin: 0;
+      display: flex; /* Make the list flexible */
+      flex-direction: column; /* Arrange items vertically */
+      gap: 9px; 
+    }
+    .contact-list li a {
+      text-decoration: none; /* Remove underline */
+      font-size: 16px; /* Adjust font size */
+      color: #000; /* Text color */
+      font-family: Roboto Mono, monospace;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    .social-media{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 30px;
+      color: black
+    }
+    .social-media a {
+      text-decoration: none; /* Remove underline */
+      color: black; /* White color for icons */
+      font-size: 20px; /* Adjust size of icons */
+      transition: color 0.3s ease; /* Add hover effect */
+}
+    .centered-row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+/* style="text-align: left; font-family: Josefin Sans, sans-serif;font-size: 20px;"*/
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+
+.img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-hover {
+  opacity: 0;
+  z-index: 1;
+}
+
+.image-container:hover .img-hover {
+  opacity: 1;
+}
+
+.image-container:hover .img-default {
+  opacity: 0;
+}
